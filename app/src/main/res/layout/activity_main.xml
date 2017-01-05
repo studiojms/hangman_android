@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.jmsstudio.forca.MainActivity">
+
+    <br.com.jmsstudio.forca.view.HangmanView
+        android:id="@+id/hangman_view"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        />
+    <EditText
+        android:id="@+id/hangman_letter"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:maxLength="1"
+        android:inputType="textCapCharacters|textNoSuggestions"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:enabled="false"
+        />
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Jogar"
+        android:enabled="false"/>
+    <Button
+        android:id="@+id/btn_new_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Novo Jogo"/>
+</LinearLayout>
